@@ -291,13 +291,21 @@ def administrar_chatbot(text,number, messageId, name):
 
 #al parecer para mexico, whatsapp agrega 521 como prefijo en lugar de 52,
 # este codigo soluciona ese inconveniente.
+# def replace_start(s):
+#     number = s[3:]
+#     if s.startswith("521"):
+#         return "51" + number
+#     elif s.startswith("549"):
+#         return "54" + number
+#     else:
+#         return s
+
 def replace_start(s):
-    number = s[3:]
-    if s.startswith("521"):
-        return "52" + number
-    elif s.startswith("549"):
-        return "54" + number
+    number = s[3:]  # Extrae el número después del prefijo "519"
+    if s.startswith("519"):  # Verifica si el número comienza con "519"
+        return "51" + number  # Reemplaza "519" con "51"
     else:
-        return s
+        return s  # Devuelve el número original si no coincide
+
         
 
