@@ -21,9 +21,3 @@ stickers = {
 }
 
 document_url = "https://www.africau.edu/images/default/sample.pdf"
-
-
-
-
-
-
